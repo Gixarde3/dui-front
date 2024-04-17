@@ -1,0 +1,5 @@
+{
+    "endpoint": "http://localhost:8000/api",
+    "endpointImage": "http://localhost:8000/img",
+    "endpointLocal":"http://localhost:5173"
+}

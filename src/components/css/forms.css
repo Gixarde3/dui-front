@@ -1,0 +1,125 @@
+:root{
+    --fondo-form:white;
+    --button:#de9e36;
+    --button-hover:#b8832f;
+}
+*{
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+form{
+    position: relative;
+    background-color: var(--fondo-form);
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    height: fit-content;
+}
+.inputForm{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+}
+label{
+    font-weight: bold;
+}
+
+p{
+    margin-bottom: 1rem !important;
+}
+a{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: blue;
+}
+.inputForm label{
+    height: 30px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid black;
+    border-right: none;
+    padding: 2px;
+}
+.inputForm input{
+    width: 100%;
+    border: 1px solid black;
+    height: 30px;
+}
+.inputForm label img{
+    max-height: 100%;
+    width: auto;
+}
+.inputForm button{
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-left: none;
+    padding: 0.3rem;
+}
+.inputForm button:hover{
+    cursor: pointer;
+    background-color: #e1e1e1;
+}
+.inputForm button img{
+    max-height: 100%;
+    width: auto;
+}
+
+.login{
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: var(--button);
+    color:black;
+}
+.login:hover{
+    background-color: var(--button-hover);
+    cursor: pointer;
+}
+.badField{
+    border: 2px solid red;
+}
+.badFieldMessage{
+    color: red;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+#icon_user{
+    position: absolute;
+    top:-60px;
+    width: 100px;
+}
+.formulario-main{
+    min-height: 100vh;
+    padding-left: 0;
+    padding-top: 0;
+}
+.db-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.db-buttons .login{
+    margin-inline: 1rem;
+}
+@media (max-width: 768px){
+    form{
+        max-width: 90%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .db-buttons{
+        flex-direction: column;
+    }
+    .db-buttons .login{
+        margin-inline: 0;
+        margin-bottom: 1rem;
+    }
+}
